@@ -1,0 +1,264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"registerForm"
+			],
+			[
+				"_",
+				"_integranteService"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"no",
+				"node_modules"
+			],
+			[
+				"jquery",
+				"jquery-dotdotdot"
+			],
+			[
+				"Ace",
+				"Access-Control-Allow-Headers"
+			],
+			[
+				"body",
+				"bodyParse"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"to",
+				"padding-top"
+			],
+			[
+				"b",
+				"bootstrap"
+			],
+			[
+				"li",
+				"link\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/camilo/A_Proyecto1/camilov1/ServicioRestNodeJs/entidades/auditoria.js",
+		"/D/camilo/A_Proyecto1/camilov1/ServicioRestNodeJs/api.js",
+		"/D/camilo/A_Proyecto1/camilov1/src/app/components/login/login.component.ts",
+		"/D/camilo/A_Proyecto1/camilov1/src/app/components/login/login.component.html",
+		"/D/camilo/A_Proyecto1/camilov1/ProyectoCursoAngular.sublime-project",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/controllers/integrante.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/models/message.js",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/registro/register.component.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/login/login.component.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/servicios/integrante.service.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/models/util.ts",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/models/integrante.js",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/registro/register.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/models/integrante.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/servicios/global.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/app.module.ts",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/index.js",
+		"/E/curso angular/curso-Avanzado-Angular/src/index.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/login/login.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/app.routing.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/assets/style.css",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/app.component.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/Home/home.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/ingresos/ingresos.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/angular-cli.json",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/models/gasto.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/middleware/authenticated.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/middleware/is_admin.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/routes/integrante.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/app.js",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/Home/home.component.html",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/models/tipoGasto.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/service/jwt.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/integrante.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/gasto.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/tipoGasto.js",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/node_modules/gasto",
+		"/E/curso angular/curso-Avanzado-Angular-BackEnd/package.json",
+		"/E/curso angular/curso-Avanzado-Angular/package.json",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/ingresos/ingresos.component.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/compras/compras.component.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/app.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/compras/compras.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/compras/compras.components.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/compras/compras.components.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/gastos/gastos.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/gastos/gastos.component.html",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/components/gatos/gastos.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/gatos/gastos.component.ts",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/app.component.css",
+		"/E/curso angular/curso-Avanzado-Angular/src/app/app.component.spec.ts",
+		"/E/curso angular/curso-Avanzado-Angular/ProyectoCursoAngular.sublime-project"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "conexiondb.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 215.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"active"
+			]
+		],
+		"width": 490.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
