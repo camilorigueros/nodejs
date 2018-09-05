@@ -1,0 +1,8 @@
+﻿version: '1'
+services:
+    
+ mongo:
+   container_name: modulo-registro-auditoria
+   image: camiloriguer/nodejs
+   ports:
+     - 8001:8001
