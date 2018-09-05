@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "c456ea27-75a8-4c19-87d2-228d13f646df",
+		"name": "Servicio Auditoria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://172.20.11.250:3789/mig/guardarAuditoria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "uuid",
+							"value": "1f163d04-7234-482b-9075-628005ba6c03",
+							"type": "text"
+						},
+						{
+							"key": "fecha_registro",
+							"value": "2018-12-31 14:50:58",
+							"type": "text"
+						},
+						{
+							"key": "tipo_documento",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "numero_documento",
+							"value": "12970970",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "edison camilo ",
+							"type": "text"
+						},
+						{
+							"key": "primer_apellido",
+							"value": "rigueros",
+							"type": "text"
+						},
+						{
+							"key": "segundo_apellido",
+							"value": "bello",
+							"type": "text"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "id_correlacion",
+							"value": "20184554545454",
+							"type": "text"
+						},
+						{
+							"key": "nombre_servicio",
+							"value": "VerificacionAlertasTMF",
+							"type": "text"
+						},
+						{
+							"key": "tipo_solicitud",
+							"value": "SOLICITUD",
+							"type": "text"
+						},
+						{
+							"key": "fecha_insert",
+							"value": "2018-05-28 14:55:58",
+							"type": "text"
+						},
+						{
+							"key": "nombre_operacion",
+							"value": "verificarAlertaTmfQueue",
+							"type": "text"
+						},
+						{
+							"key": "per_nodo",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "per_codigo",
+							"value": "11111",
+							"type": "text"
+						},
+						{
+							"key": "ip_consumidor",
+							"value": "172.0.0.1",
+							"type": "text"
+						},
+						{
+							"key": "funcionario",
+							"value": "1032101111",
+							"type": "text"
+						},
+						{
+							"key": "punto_control",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sistema_origen",
+							"value": "ESCLUSAS",
+							"type": "text"
+						},
+						{
+							"key": "payload",
+							"value": "{\"audt:Mensaje\": {\n    \"xmlns:audt\": \"urn:migracioncolombia:support:specification:schemas:auditoria-v1\",\n    \"audt:Cuerpo\": {\"soapenv:Body\": {\"ns1:verificarInterpolCircularesResponse\": {\n        \"verificarDijinReturnMessage\": {\n            \"descripcion\": \"ALERTA NEGATIVA INTERPOL: La persona coincide en un 0.0 %\",\n            \"tipoAlerta\": -100\n        },\n        \"xmlns:ns1\": \"http://interpol.ws.platinum.mc.gov.co/\"\n    }}},\n    \"xmlns:soapenv\": \"http://schemas.xmlsoap.org/soap/envelope/\",\n    \"audt:Cabecera\": {\"soapenv:Header\": {\"ns0:EncabezadoSolicitud\": {\n        \"ns0:Localizacion\": {\"ns0:idTerminal\": \"172.26.214.33\"},\n        \"ns0:Consumidor\": {\n            \"ns0:modulo\": \"ALERTASTMF\",\n            \"ns0:sistema\": \"QUARTZ\"\n        },\n        \"ns0:UUID\": \"386486ea-b4b0-49b5-87d6-8cb8f374b48b\",\n        \"xmlns:ns0\": \"urn:migracioncolombia:common:specification:schemas:canonical-v1\"\n    }}}\n}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://172.20.11.250:3789/mig/guardarAuditoria",
+					"protocol": "http",
+					"host": [
+						"172",
+						"20",
+						"11",
+						"250"
+					],
+					"port": "3789",
+					"path": [
+						"mig",
+						"guardarAuditoria"
+					]
+				},
+				"description": "Servicio para registrar auditorias preproduccion"
+			},
+			"response": []
+		}
+	]
+}
