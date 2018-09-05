@@ -6,7 +6,7 @@ var port = process.env.PORT || 3000;
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://1752.20.11.250:27017/DBAuditoria')
+mongoose.connect('mongodb://172.20.11.250:27017/DBAuditoria')
 .then(() =>{
 	console.log('conexion exitosa');
 	app.listen(port, ()  => {
