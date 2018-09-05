@@ -1,8 +1,21 @@
-﻿version: '1'
+﻿version: '2'
 services:
+ 
+ registro_auditoria:
+    restart: always
+    container_name: modulo-registro-auditoria
+    image: camiloriguer/nodejs
+    ports:
+     - 3789:3789
+    links:
+    - mongo
     
  mongo:
-   container_name: modulo-registro-auditoria
-   image: camiloriguer/nodejs
-   ports:
-     - 8001:8001
+    restart: always
+    container_name: mongo-auditoria
+    image: mongo
+    ports:
+     - 27017:27017
+    
+    
+ 
