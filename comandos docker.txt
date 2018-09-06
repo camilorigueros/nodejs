@@ -1,1 +1,29 @@
 docker exec -it f6a52b3b2590 /bin/bash
+
+C:\Users\1014193404c.MIGCOLOMBIA>docker ps
+CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                              NAMES
+93e97c441bc1        camiloriguer/nodejs   "npm start"              21 minutes ago      Up 18 minutes       0.0.0.0:3789->3789/tcp, 8080/tcp   modulo-registro-auditoria
+bb42adc41229        mongo                 "docker-entrypoint.s…"   21 minutes ago      Up 18 minutes       0.0.0.0:27017->27017/tcp           mongo-auditoria
+
+C:\Users\1014193404c.MIGCOLOMBIA>docker logs modulo-registro-auditoria
+
+Donde se encuentre el archivo docker compose se ejecuta:
+D:\Proceso Auditoria\Servicio>docker-compose stop
+Stopping modulo-registro-auditoria ... done
+Stopping mongo-auditoria           ... done
+
+docker-compose start
+
+en vez de la ip o del localhost se pone el nombre que se le dio al servicio en el docker compose ejemplo
+mongoose.connect('mongodb://mongo:27017/DBAuditoria', (err, res) => {
+
+
+
+restaurar base de datos mongo windows
+C:\Program Files\MongoDB\Server\4.0\bin>mongorestore -d DBAuditoria dump\DBAuditoria
+
+restaurar base de datos mongo linux
+D:\MongoAuditoria>docker cp DBAuditoria 73e01c298f93:/usr/DBMongo
+docker start 73e01c298f93
+docker exec -it 73e01c298f93 /bin/bash
+root@73e01c298f93:/usr/bin# mongorestore -d DBAuditoria /usr/DBMongo/
