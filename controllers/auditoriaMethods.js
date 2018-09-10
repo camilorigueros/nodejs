@@ -10,7 +10,11 @@ function probar(req, res) {
 
 function guardarAuditoria(req, res) {
 	var auditoria = new Auditoria();
-
+	
+	res.status(200).send({
+		req
+	});	
+	
 	try{
 		var params = req.body;
 
