@@ -4,19 +4,12 @@ var Auditoria = require("../entidades/auditoria")
 
 function probar(req, res) {
     res.status(200).send({
-	   message: "probar",
-	   req : req
+	   message: "probar"
 	});
 };
 
 function guardarAuditoria(req, res) {
 	var auditoria = new Auditoria();
-	
-	res.status(200).send({
-		req : req
-	});	
-	
-	
 	
 	try{
 		var params = req.body;
