@@ -19,4 +19,7 @@ function conexion() {
 		}
 	});
 }
+
 setTimeout(conexion, 10000);
+
+
