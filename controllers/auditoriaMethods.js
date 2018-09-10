@@ -12,8 +12,10 @@ function guardarAuditoria(req, res) {
 	var auditoria = new Auditoria();
 	
 	res.status(200).send({
-		req
+		req : req
 	});	
+	
+	
 	
 	try{
 		var params = req.body;
