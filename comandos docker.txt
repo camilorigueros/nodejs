@@ -27,3 +27,6 @@ D:\MongoAuditoria>docker cp DBAuditoria 73e01c298f93:/usr/DBMongo
 docker start 73e01c298f93
 docker exec -it 73e01c298f93 /bin/bash
 root@73e01c298f93:/usr/bin# mongorestore -d DBAuditoria /usr/DBMongo/
+
+
+docker run --rm --link mongodb:mongo -v /root:/backup mongo \bash -c ‘mongorestore /backup --host mongo:27017’

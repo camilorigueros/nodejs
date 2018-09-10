@@ -4,7 +4,8 @@ var Auditoria = require("../entidades/auditoria")
 
 function probar(req, res) {
     res.status(200).send({
-	   message: "probar"
+	   message: "probar",
+	   req : req
 	});
 };
 
@@ -13,7 +14,7 @@ function guardarAuditoria(req, res) {
 
 	try{
 		var params = req.body;
-
+		
 		auditoria.uuid   =  params.uuid;
 		auditoria.fecha_registro =  params.fecha_registro;
 		auditoria.tipo_documento =  params.tipo_documento;
@@ -35,10 +36,15 @@ function guardarAuditoria(req, res) {
 		auditoria.sistema_origen =  params.sistema_origen;
 					
 		if (params.payload !=null){
-			auditoria.payload =  JSON.parse(params.payload);
+			//auditoria.payload =  JSON.parse(params.payload);
+			/*
+			 * Desde El OSB debe quedar sin parseo enviando en json
+			 */
+			auditoria.payload =  params.payload;
 		}else{
 			auditoria.payload= null;
 		}
+		
 		
 		auditoria.save((err, aud) => {
 			if(err){
