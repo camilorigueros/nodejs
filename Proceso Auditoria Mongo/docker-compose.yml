@@ -1,0 +1,11 @@
+version: '2'
+services:
+    build:  
+      args:
+        proxy: "http://MIGCOLOMBIA\1014195455c:CRB1014195455*+@10.6.10.10:3128"
+        sproxy:"https://MIGCOLOMBIA\1014195455c:CRB1014195455*+@10.6.10.10:3128"
+ mongo:
+   container_name: mongo-auditoria
+   image: mongo
+   ports:
+     - 27017:27017

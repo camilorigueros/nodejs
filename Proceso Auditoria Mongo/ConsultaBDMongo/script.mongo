@@ -1,0 +1,28 @@
+fecha maxima: 2018-05-28 19:56:58.000Z
+fecha minima: 2018-05-28 19:55:56.000Z
+
+
+db.getCollection('auditorias').find({
+"fecha_registro" : {"$gte": ISODate("2018-05-28 19:55:00.000Z") ,"$lt":ISODate("2018-05-28 20:00:00.000Z")  }
+}).sort({fecha_registro:1});
+
+
+
+db.getCollection('auditorias').find({
+"fecha_registro" : {"$gte": ISODate("2018-05-28 19:55:00.000Z") },
+"numero_documento" : 'V16439495'
+}).sort({fecha_registro:1});
+
+
+
+db.getCollection('auditorias').find({
+"fecha_registro" : {"$gte": ISODate("2018-05-28 19:55:00.000Z") },
+"numero_documento" : 'V16439495',
+"tipo_solicitud" : 'RESPUESTA'
+}).sort({fecha_registro:1});
+
+
+db.getCollection('auditorias').find({
+"fecha_registro" : {"$gte": ISODate("2018-07-01 21:43:52.000Z") ,"$lt":ISODate("2018-08-02 17:23:07.000Z")  }
+}).sort({fecha_registro:1});
+ 
