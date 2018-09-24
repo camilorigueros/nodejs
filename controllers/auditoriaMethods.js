@@ -12,6 +12,10 @@ function guardarAuditoria(req, res) {
 	var auditoria = new Auditoria();
 	
 	try{
+		
+		console.log(req.body);
+		
+		
 		var params = req.body;
 		
 		auditoria.uuid   =  params.uuid;

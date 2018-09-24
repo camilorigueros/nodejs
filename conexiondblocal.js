@@ -2,12 +2,12 @@
 
 var mongoose = require('mongoose');
 var app = require('./api');
-var port = process.env.PORT || 3789;
+var port = process.env.PORT || 3780;
 
 
 function conexion() {
 	mongoose.Promise = global.Promise;
-	mongoose.connect('mongodb://localhost:27017/DBAuditoria', (err, res) => {
+	mongoose.connect('mongodb://172.20.11.250:27017/DBAuditoria', (err, res) => {
 		if (err) {
 			console.log('Error al conectar a la base de datos.');
 			throw err;
