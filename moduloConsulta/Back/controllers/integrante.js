@@ -21,8 +21,9 @@ function consultarAuditoria(req,res){
 
 
 function consultarAuditoriaFiltro(req,res){
-	Auditoria.find({ 
-		"fecha_registro" : {"$gte": ISODate(req.body.fechaIni) ,"$lt":ISODate(req.body.fechaFin)  }
+	var fecha_registro = filtroFechas(req.body,res);
+
+	Auditoria.find({  fecha_registro
 	}).exec((err, datos) => {
 		if(err){
 			res.status(500).send({message: 'Error en la consulta'});
@@ -32,6 +33,26 @@ function consultarAuditoriaFiltro(req,res){
 	});
 }
 
+function filtroFechas(req,res){
+	var fechas= [];
+
+	if(req.fechaIni != '' && req.fechaFinal != ''){
+		var fechaInicial = req.fechaIni+"T00:00:00.000";
+		var fechaFinal = req.fechaFin+"T23:59:59.000";
+	
+		fechas.push({"$gte" : fechaInicial,"$lt" :fechaFinal}) ;
+	}
+	return fechas[0];
+}
+
+function filtroUuid(req,res){
+	var filtro= [];
+
+	if(req.uuid != ''){
+		filtro.push({"uuid" : req.uuid}) ;
+	}
+	return filtro[0];
+}
 
 function login(req,res){
 

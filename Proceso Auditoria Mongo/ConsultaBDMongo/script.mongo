@@ -26,3 +26,15 @@ db.getCollection('auditorias').find({
 "fecha_registro" : {"$gte": ISODate("2018-07-01 21:43:52.000Z") ,"$lt":ISODate("2018-08-02 17:23:07.000Z")  }
 }).sort({fecha_registro:1});
  
+ 
+  "fecha_registro": 
+        {
+            "$gte": "2018-12-30 00:55:00.000",
+            "$lt": "2018-12-31 20:00:00.000"
+        }
+		
+   "fecha_registro" : 
+   {
+   "$gte": ISODate("2018-12-30 00:55:00.000") ,
+   "$lt":ISODate("2018-12-31 20:00:00.000")  
+   }
